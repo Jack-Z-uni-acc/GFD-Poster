@@ -71,8 +71,8 @@ Pea, Peo   = 2.0e3, 2.0e3  # Peclet numbers
 gamma      = -0.5          # atmosphere<-ocean temperature coupling (gamma<0)
 sigma      = -0.5          # ocean<-atmosphere velocity coupling (sigma<0)
 
-dt         = 2.0e-3
-n_steps    = 4000
+dt         = 2.0e-4      # reduced time step to avoid instability
+n_steps    = 20000
 save_every = 200
 
 rng = np.random.default_rng(0)
