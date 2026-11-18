@@ -64,13 +64,11 @@ import matplotlib.pyplot as plt
 # ----------------------------------------------------------------------
 N          = 128          # grid points per direction
 L          = 2 * np.pi    # domain size (periodic box [0,L]^2)
-
 Roa, Roo   = 0.5, 0.5      # Rossby numbers (atmosphere, ocean)
 Rea, Reo   = 2.0e3, 2.0e3  # Reynolds numbers
 Pea, Peo   = 2.0e3, 2.0e3  # Peclet numbers
 gamma      = -0.5          # atmosphere<-ocean temperature coupling (gamma<0)
 sigma      = -0.5          # ocean<-atmosphere velocity coupling (sigma<0)
-
 dt         = 2.0e-4      # reduced time step to avoid instability
 n_steps    = 20000
 save_every = 200
